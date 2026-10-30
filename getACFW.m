@@ -9,7 +9,7 @@ function biomarkers = getACFW(response,d, biomarkers, nonartefact_length)
 
         %% autocorrelation
         autocorrE = autocorr(nonprob_detrend_norm(i,:),round(size(nonprob_detrend_norm,2)/2));%sum((Ehalf(1:end-1)-mean(Ehalf)).*(Ehalf(2:end)-mean(Ehalf)))/varE(j);
-        arE(d) = arE(d) + sum(autocorrE>0.6)/size(data,1);
+        arE(d) = arE(d) + sum(autocorrE>(1-0.341))/size(data,1);
 
     end
     biomarkers.arE(d) = arE(d);

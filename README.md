@@ -49,3 +49,5 @@ All three functions update and return a central `biomarkers` structure, making i
 * `d`: The current iteration or dimension index to store the calculated biomarker.
 * `biomarkers`: A MATLAB struct used to accumulate the results.
 * `nonartefact_length`: An array of indices representing the clean, artifact-free portion of the signal.
+
+This toolbox was developed by Wei Qin and Jodie Naim-Feil as an extension of our preprint, and we kindly ask that anyone using the toolbox reference this publication.
